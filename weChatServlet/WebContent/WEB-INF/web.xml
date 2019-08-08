@@ -11,8 +11,15 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   -->
-  <display-name>weChatServlet</display-name>
   <welcome-file-list>
-    <welcome-file>weChatAccounts</welcome-file>
+  	<welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+      <servlet-name>weChatServlet</servlet-name>
+      <servlet-class>weChatServlet.weChatAccounts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>weChatServlet</servlet-name>
+      <url-pattern>/weChatServlet</url-pattern> <!--url-pattern必须与servlet-name一致-->
+  </servlet-mapping>
 </web-app>
