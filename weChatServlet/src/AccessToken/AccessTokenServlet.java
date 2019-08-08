@@ -3,6 +3,9 @@ package AccessToken;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+
 
 public class AccessTokenServlet extends HttpServlet {
     //static Logger logger = LoggerFactory.getLogger(AccessTokenServlet.class);
@@ -52,7 +55,7 @@ public class AccessTokenServlet extends HttpServlet {
         String Url = String.format("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s", appId, appSecret);
         //此请求为https的get请求，返回的数据格式为{"access_token":"ACCESS_TOKEN","expires_in":7200}
         String result = netHelper.getHttpsResponse(Url, "");
-        System.out.println("获取到的access_token="+result);
+        System.out.println("获取到的access_token=" + result);
 
         //使用FastJson将Json字符串解析成Json对象
         JSONObject json = JSON.parseObject(result);
