@@ -14,5 +14,12 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="libs/fastjson-1.2.2.jar"/>
+	<classpathentry kind="lib" path="libs/org.dom4j.dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="libs/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient5-5.0-beta5.jar"/>
+	<classpathentry kind="lib" path="libs/org.apache.commons.httpclient.jar"/>
+	<classpathentry kind="lib" path="libs/commons-codec-1.12.jar"/>
+	<classpathentry kind="lib" path="libs/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
